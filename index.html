@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Background Remover</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d47a1">
+</head>
+<body>
+  <h1>AI Background Remover</h1>
+  <input type="file" id="imageUpload" accept="image/*">
+  <br><br>
+  <canvas id="outputCanvas"></canvas>
+  <br><br>
+  <button id="removeBackgroundBtn">Remove Background</button>
+  <button id="downloadBtn">Download Image</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix"></script>
+  <script src="script.js"></script>
+</body>
+</html>
